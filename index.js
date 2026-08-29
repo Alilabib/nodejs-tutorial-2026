@@ -55,16 +55,29 @@
 
 
 
-function createGreeter(greeting){
-        return function(name){
-            return `${greeting}, ${name}!`;
-        }
-} 
+// function createGreeter(greeting){
+//         return function(name){
+//             return `${greeting}, ${name}!`;
+//         }
+// } 
 
-const WelcomeStudy = createGreeter("Welcome to the study");
-console.log(WelcomeStudy("Ali Labib")); // Output: Welcome to the study, Ali Labib Mohammed!
+// const WelcomeStudy = createGreeter("Welcome to the study");
+// console.log(WelcomeStudy("Ali Labib")); // Output: Welcome to the study, Ali Labib Mohammed!
 
 
+// const WelcomeRamadan = createGreeter("Welcome to the Ramadan");
+// console.log(WelcomeRamadan("Ahmed Mohamed")); // Output: Welcome to the Ramadan, Ahmed Mohamed!
+
+
+const newObject = {
+    name: "Ali Labib",
+    age: 25,
+    greet: function() {
+        console.log(`Hello, my name is ${this.name} and I am ${this.age} years old.`);
+    }
+};
+
+newObject.greet(); // Output: Hello, my name is Ali Labib and I am 25 years old.
 const WelcomeRamadan = createGreeter("Welcome to the Ramadan");
 console.log(WelcomeRamadan("Ahmed Mohamed")); // Output: Welcome to the Ramadan, Ahmed Mohamed!
 
