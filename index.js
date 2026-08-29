@@ -78,3 +78,13 @@ const newObject = {
 };
 
 newObject.greet(); // Output: Hello, my name is Ali Labib and I am 25 years old.
+const WelcomeRamadan = createGreeter("Welcome to the Ramadan");
+console.log(WelcomeRamadan("Ahmed Mohamed")); // Output: Welcome to the Ramadan, Ahmed Mohamed!
+
+
+const newArray = [1,2,3,4,5];
+const newArray2 = newArray.map((element)=>{
+    return element*2;
+})
+
+console.log(newArray2); // Output: [2, 4, 6, 8, 10]
