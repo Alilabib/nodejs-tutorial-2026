@@ -1,0 +1,17 @@
+{
+  "name": "nodeapp",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "ahmed": "node index.js",
+    "yara":" node yara.js",
+    "start": "node index.js",
+    "build:windos": "pkg . --targets node18-win-x64 --output build/windows/nodeapp.exe",
+    "build:linux": "pkg . --targets node18-linux-x64 --output build/linux/nodeapp",
+    "build:mac": "pkg . --targets node18-macos-x64 --output build/mac/nodeapp"
+  }
+}
